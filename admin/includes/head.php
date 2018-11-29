@@ -30,6 +30,9 @@ require_once __DIR__ . "/../api_config.php";
 <!-- jQuery -->
 <script src="../js/jquery.js"></script>
 
+<!-- jQuery ScrollTo -->
+<script src="../js/jquery.scrollTo.min.js"></script>
+
 <!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.min.js"></script>
 

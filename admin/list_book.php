@@ -92,7 +92,7 @@ $book = json_decode($html);
                     <script>
                         $(document).ready(function () {
                             $(window).scroll(function () {
-                                if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+                                if ($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
                                     if (moreResult && !pending)
                                         getBooks(start);
                                 }

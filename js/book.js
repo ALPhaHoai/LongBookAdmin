@@ -92,9 +92,15 @@ function doSearch(startInput = 0) {
             if (startInput === 0) $('#search-result tbody tr').remove();
             if (response.status === 200) {
                 moreResult = true;
+
                 console.log(response.responseJSON.result);
                 buildResult(response.responseJSON.result);
                 start = startInput + limit;
+
+                if(startInput === 0){//scroll to first result element
+                	$.scrollTo( $('#form_search_book > input[type="submit"]'), 800);
+                }
+
             } else if (response.status === 0) {
                 alert("Không thể kết nối tới server");
             } else {
